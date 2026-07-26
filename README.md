@@ -2,7 +2,7 @@
 
 CareFlow is a public, synthetic demonstration of how a healthcare SaaS Revenue Operations team can turn recurring commercial work into auditable AI-assisted workflows.
 
-**Live demo:** deployment URL added after production verification  
+**Live demo:** [careflow-revops-automations.vercel.app](https://careflow-revops-automations.vercel.app)  
 **Target role family:** Revenue Operations, Business Operations, AI Enablement, Healthcare Operations
 
 ## Problem

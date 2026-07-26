@@ -1,0 +1,11 @@
+{
+  "name": "careflow-revops-automations",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/app.js && node --check src/data.js",
+    "start": "npx serve . -l 4173"
+  }
+}

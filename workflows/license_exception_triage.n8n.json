@@ -1,0 +1,12 @@
+{
+  "name": "CareFlow License Exception Triage",
+  "version": "synthetic-demo-v1",
+  "note": "Importable design reference for n8n. The deployed portfolio demo simulates this workflow in-browser and does not connect to real Salesforce, billing, or Claude accounts.",
+  "nodes": [
+    { "name": "Salesforce Account Snapshot", "type": "n8n-nodes-base.salesforce", "purpose": "Read account, renewal, opportunity, and license fields" },
+    { "name": "Validate License and Invoice Rules", "type": "n8n-nodes-base.code", "purpose": "Flag unassigned licenses, invoice mismatches, and renewal timing" },
+    { "name": "Claude Recommendation", "type": "n8n-nodes-base.httpRequest", "purpose": "Call a server-side Claude adapter with approved account context" },
+    { "name": "Human Approval", "type": "n8n-nodes-base.formTrigger", "purpose": "Require Finance or Customer Success approval before routing" },
+    { "name": "Create CRM Follow-up", "type": "n8n-nodes-base.salesforce", "purpose": "Create a task and append an audit event" }
+  ]
+}
